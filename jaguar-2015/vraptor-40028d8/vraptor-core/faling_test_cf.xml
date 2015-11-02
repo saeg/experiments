@@ -1,0 +1,17 @@
+16:12:13.357 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.deserialization.XStreamXmlDeserializerTest.shouldBeAbleToDeserializeAPersonWithDog : Failed
+
+16:11:37.349 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.scan.ScannotationComponentScannerTest.shouldScanWEBINFClasses : Failed
+16:12:23.145 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shoudRegisterInterceptorsInInterceptorRegistry : Failed
+16:12:23.325 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shoudRegisterResourcesInRouter : Failed
+16:12:23.490 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shoudRegisterConvertersInConverters : Failed
+16:12:23.652 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shouldRunPostConstructMethodOfApplicationScopedComponentsAtContainerStart : Failed
+16:12:24.643 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shouldProvideOnlyIfBeanIsRegistered : Failed
+16:12:24.819 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shouldScanAndRegisterAnnotatedBeans : Failed
+16:12:24.984 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.twoClassesWithSameNameButDifferentPackages : Failed
+16:12:24.318 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shouldSupportOtherStereotypeAnnotations : Failed
+16:12:25.164 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringBasedContainerTest.shouldSupportConstructorInjection : Failed
+
+16:10:54.534 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.pico.CustomPicoProviderTest.shoudRegisterResourcesInRouter : Failed
+16:11:16.028 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.pico.PicoProviderTest.shoudRegisterResourcesInRouter : Failed
+16:12:06.374 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.spring.SpringProviderRegisteringComponentsTest.shoudRegisterResourcesInRouter : Failed
+16:12:58.497 [main] INFO  JaguarLogger - Test br.com.caelum.vraptor.ioc.guice.GuiceProviderTest.shoudRegisterResourcesInRouter : Failed

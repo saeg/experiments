@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+	version="1.1" bean-discovery-mode="all">
+
+	<scan>
+		<exclude name="br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver">
+			<if-class-not-available name="org.apache.commons.fileupload.FileItem"/>
+		</exclude>
+
+		<exclude name="br.com.caelum.vraptor.observer.upload.NullMultipartObserver">
+			<if-class-available name="org.apache.commons.fileupload.FileItem"/>
+		</exclude>
+
+		<exclude name="br.com.caelum.vraptor.serialization.xstream.*">
+			<if-class-not-available name="com.thoughtworks.xstream.XStream"/>
+		</exclude>
+
+		<exclude name="br.com.caelum.vraptor.serialization.gson.*">
+			<if-class-not-available name="com.google.gson.Gson"/>
+		</exclude>
+
+		<exclude name="br.com.caelum.vraptor.http.ParanamerNameProvider">
+			<if-class-not-available name="com.thoughtworks.paranamer.Paranamer"/>
+		</exclude>
+
+	</scan>
+</beans>

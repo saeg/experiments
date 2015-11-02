@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FaultClassification heuristic="DRT" project="fault localization" requirementType="LINE" timeSpent="157406">
+    <packages cef="0" cep="0" cnf="0" cnp="0" name="com.thoughtworks.xstream.mapper" number="432" suspicious-value="0.5760902031063321">
+        <class cef="0" cep="0" cnf="0" cnp="0" location="67" name="com.thoughtworks.xstream.mapper.AnnotationMapper" number="432" suspicious-value="0.5760902031063321">
+            <method id="19" methodsusp="0.5760902031063321" position="11" cef="0" cep="0" cnf="0" cnp="0" location="451" name="Converter cacheConverter(XStreamConverter, Class)" number="396" suspicious-value="0.5760902031063321">
+                <requirements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lineRequirement" type="LINE" cef="5" cep="2" cnf="8" cnp="1473" location="455" name="455" number="54" suspicious-value="0.5753169276659207"/>
+            </method>
+        </class>
+    </packages>
+</FaultClassification>
