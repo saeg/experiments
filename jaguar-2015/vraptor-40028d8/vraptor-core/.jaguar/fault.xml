@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<package name="br.com.caelum.vraptor.deserialization" number="17" suspicious-value="0.9370805369127516">
-	<class location="42" name="br.com.caelum.vraptor.deserialization.XStreamXMLDeserializer" number="17" suspicious-value="0.9370805369127516">
-		<method id="6" methodsusp="0.9370805369127516" position="64" location="96" name="XStream getXStream()" number="1" suspicious-value="0.9370805369127516">
-			<requirements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lineRequirement" type="LINE" location="96" name="96" number="0" suspicious-value="0.9370805369127516"/>
-		</method>
-	</class>
-</package>
