@@ -24,3 +24,6 @@ On the second tab (Test), make sure you have the option "Run all tests in the se
 On the third tab (Main) you should be using jdk1.7.0_75 (we have experienced erros with other versions).
 
 6- Run and whatch.
+
+The error is at:
+br.com.caelum.vraptor.core.MethodInfo 67
