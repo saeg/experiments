@@ -14,7 +14,7 @@ Compiler compliance lever = 1.7
 Apply.
 
 4- Select src/test/java folder and then Rigth click on it -> Run as -> JUnit test.
-Only this test should fail: br.com.caelum.vraptor.core.MethodInfoTest.should_clear_valued_parameters_when_controller_method_is_updated
+Only this test should fail: br.com.caelum.vraptor.deserialization.XStreamXmlDeserializerTest.shouldBeAbleToDeserializeAPersonWithDog
 
 5- Select src/test/java folder and then Rigth click on it -> Run as -> Run Configurations.
 On the left side, double click Jaguar Fault Localization.
