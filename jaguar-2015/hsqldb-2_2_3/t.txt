@@ -1,0 +1,3 @@
+"charcol_1","intcol","charcol_2"
+,,
+"aval1",,"aval2"

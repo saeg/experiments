@@ -1,0 +1,7 @@
+/*C3*/SET SCHEMA PUBLIC
+drop table testtable if exists
+create cached table testtable (     aString              varchar(256)                   not null,     firstNum             integer                        not null,     aDate                date                           not null,     secondNum            integer                        not null,     thirdNum             integer                        not null,     aName                varchar(32)                    not null   )
+INSERT INTO TESTTABLE VALUES(' XYZ ',22,'2003-11-10',18,3,'my name goes here')
+COMMIT
+drop table testtable
+DISCONNECT
