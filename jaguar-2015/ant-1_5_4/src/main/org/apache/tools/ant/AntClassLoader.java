@@ -377,7 +377,7 @@ public class AntClassLoader extends ClassLoader implements BuildListener {
      */
     public void setClassPath(Path classpath) {
         pathComponents.removeAllElements();
-        if (classpath == null) {
+        if (classpath != null) {
             Path actualClasspath = classpath.concatSystemClasspath("ignore");
             String[] pathElements = actualClasspath.list();
             for (int i = 0; i < pathElements.length; ++i) {
