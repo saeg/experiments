@@ -2,7 +2,7 @@ HSQLDB 2.2.3
 
 - Two test classes were excluded (files finished as java.saeg)
 - Several tests were commented due to failures/errors even when the fault is not inserted. Some test cases are only stubs.
-- This version already contains the fault in the file JDBCClobFile, see JDBCClobFile.cpp.
+- This version already contains the fault JDBCCF_AK_1 in the file JDBCClobFile, see JDBCClobFile.cpp.
 
 Installing
 - copy the folder into your workspace
