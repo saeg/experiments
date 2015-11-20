@@ -740,7 +740,7 @@ public class Manifest {
 
 
 
-                    = new Manifest(new InputStreamReader(in, "UTF-16"));
+                    = new Manifest(new InputStreamReader(in, "UTF-8"));
 
 
 
