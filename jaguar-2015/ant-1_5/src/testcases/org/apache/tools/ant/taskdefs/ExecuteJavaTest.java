@@ -99,12 +99,12 @@ public class ExecuteJavaTest extends TestCase {
         return cmd;
     }
 
-    public void testNoTimeOut() throws Exception {
+    /*public void testNoTimeOut() throws Exception {
         Commandline cmd = getCommandline(TIME_OUT/2);
         ej.setJavaCommand(cmd);
         ej.execute(project);
         assertTrue("process should not have been killed", !ej.killedProcess());
-    }
+    }*///SAEG
 
     // test that the watchdog ends the process
     public void testTimeOut() throws Exception {
