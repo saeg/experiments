@@ -770,13 +770,8 @@ public class FileUtils {
 
 
 
-        if (f != null) {
-            String p = f.getParent();
-            if (p != null) {
-                return new File(p);
-            }
-        }
-        return null;
+    	String p = f.getParent();
+        return new File(p);
 
     }
 
