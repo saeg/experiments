@@ -127,7 +127,7 @@ public class SourceFileScanner {
 
 
 
-            File src = fileUtils.resolveFile(srcDir, files[i]);
+            File src = null;
 
 
             if (src.lastModified() > now) {
