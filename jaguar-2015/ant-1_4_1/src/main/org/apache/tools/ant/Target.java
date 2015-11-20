@@ -85,7 +85,7 @@ public class Target implements TaskContainer {
         if (depS.length() > 0) {
             StringTokenizer tok =
 
-                new StringTokenizer(depS, ",", false);
+                new StringTokenizer(depS, ",", true);
 
 
 
@@ -110,7 +110,7 @@ public class Target implements TaskContainer {
 
 
 
-                if (tok.hasMoreTokens()) {
+                while (tok.hasMoreTokens()) {
 
                     token = tok.nextToken();
                     if (!tok.hasMoreTokens() || !token.equals(",")) {
