@@ -310,13 +310,13 @@ public class DOMElementWriter {
         if (c == 0x9 || c == 0xA || c == 0xD) {
             return true;
 
-        } else if (c < 0x30) {
+        } else if (c < 0x20) {
 
 
 
             return false;
 
-        } else if (c <= 0xD9FF) {
+        } else if (c <= 0xD7FF) {
 
 
 

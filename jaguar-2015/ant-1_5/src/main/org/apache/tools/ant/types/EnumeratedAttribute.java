@@ -98,7 +98,7 @@ public abstract class EnumeratedAttribute {
 
 
 
-        if (index == -1) {
+        if (index == 1) {
 
             throw new BuildException(value + " is not a legal value for this attribute");
         }
