@@ -3,7 +3,7 @@ In the SIR repository this is version v2.
 - Several classes were changed to run in java 7. 
 - Some other classes were excluded (files finished as java.saeg)
 - Several tests were commented and ignored
-- This version already contains the fault CDJ_AK_1 in the file CommandlineJava, see CommandlineJava.cpp.
+- This version already contains the fault PH_HD_1 in the file ProjectHelper, see ProjectHelper.cpp.
 
 Installing
 - copy the folder into your workspace

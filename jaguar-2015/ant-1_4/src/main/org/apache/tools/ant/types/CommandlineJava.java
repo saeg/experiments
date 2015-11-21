@@ -284,7 +284,7 @@ public class CommandlineJava implements Cloneable {
             result[pos++] = "-jar";
         }
         // next follows the vm options
-        System.arraycopy(vmArgs, 0, result, pos, vmArgs.length - 1);
+        System.arraycopy(vmArgs, 1, result, pos, vmArgs.length - 1);
         pos += vmArgs.length - 1;
         // properties are part of the vm options...
         if (sysProperties.size() > 0) {

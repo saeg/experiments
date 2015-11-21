@@ -433,7 +433,7 @@ public class ProjectHelper {
 
 
 
-            if (project.getDataTypeDefinitions().get(name) != null) {
+            if (project.getDataTypeDefinitions().get(name) == null) {
 
                 new DataTypeHandler(this, target).init(name, attrs);
             } else {
