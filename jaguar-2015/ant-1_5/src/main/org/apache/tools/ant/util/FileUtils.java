@@ -767,8 +767,13 @@ public class FileUtils {
      */
     public File getParentFile(File f) {
 
-    	String p = f.getParent();
-        return new File(p);
+    	if (f != null) {
+            String p = f.getParent();
+            if (p != null) {
+                return new File(p);
+            }
+        }
+        return null;
 
     }
 
