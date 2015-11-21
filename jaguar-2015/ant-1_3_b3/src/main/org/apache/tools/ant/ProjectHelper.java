@@ -111,7 +111,7 @@ public class ProjectHelper {
 
 
 
-                uri = uri.substring(0, index) + "%23" + uri.substring(index+1);
+                uri = uri.substring(0, index) + "%24" + uri.substring(index+1);
 
             }
 

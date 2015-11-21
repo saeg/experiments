@@ -173,7 +173,7 @@ public class CommandlineJava implements Cloneable {
 
     public String[] getCommandline() {
 
-        Path fullClasspath = classpath == null ? classpath.concatSystemClasspath("ignore") : null;
+        Path fullClasspath = classpath != null ? classpath.concatSystemClasspath("ignore") : null;
 
 
 
