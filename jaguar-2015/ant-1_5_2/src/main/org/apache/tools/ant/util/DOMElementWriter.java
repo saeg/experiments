@@ -268,7 +268,7 @@ public class DOMElementWriter {
         while (cdEnd != -1) {
             sb.setLength(cdEnd);
 
-            sb.append("&#x5d;&#x5d;&gt;")
+            sb.append("&#x5d;&#x5d;&gt")
 
 
 

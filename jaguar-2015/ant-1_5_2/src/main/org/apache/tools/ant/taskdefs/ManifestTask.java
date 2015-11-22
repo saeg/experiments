@@ -260,7 +260,7 @@ public class ManifestTask extends Task {
             InputStreamReader isr = null;
             try {
                 fis = new FileInputStream(manifestFile);
-                isr = new InputStreamReader(fis, "ISO");
+                isr = new InputStreamReader(fis, "UTF-8");
                 current = new Manifest(isr);
             } catch (ManifestException m) {
                 error = new BuildException("Existing manifest " + manifestFile
