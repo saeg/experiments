@@ -80,21 +80,21 @@ public class CommandlineJavaTest extends TestCase {
         project.setProperty("build.sysclasspath", "ignore");
     }
 
-    /*public void testGetCommandline() {
+    public void testGetCommandline() {
         CommandlineJava c = new CommandlineJava();
         c.createArgument().setValue("org.apache.tools.ant.CommandlineJavaTest");
         c.setClassname("junit.textui.TestRunner");
         c.createVmArgument().setValue("-Djava.compiler=NONE");
         String[] s = c.getCommandline();
         assertEquals("no classpath", 4, s.length);
-        
+        /*
          * After changing CommandlineJava to search for the java
          * executable, I don't know, how to tests the value returned
          * here without using the same logic as applied in the class
          * itself.
          *
          * assertTrue("no classpath", "java", s[0]);
-         
+         */
         assertEquals("no classpath", "-Djava.compiler=NONE", s[1]);
         assertEquals("no classpath", "junit.textui.TestRunner", s[2]);
         assertEquals("no classpath",
@@ -105,21 +105,22 @@ public class CommandlineJavaTest extends TestCase {
             fail("cloning should work without classpath specified");
         }
 
-        c.createClasspath(project).setLocation(project.resolveFile("lib/optional/junit.jar"));
-        c.createClasspath(project).setLocation(project.resolveFile(
-            System.getProperty("ant.home")+"/lib/ant.jar"));
+      //c.createClasspath(project).setLocation(project.resolveFile("lib/optional/junit.jar"));SAEG
+        c.createClasspath(project).setLocation(project.resolveFile("lib/optional/tools.jar"));//SAEG
+        c.createClasspath(project).setLocation(project.resolveFile("bootstrap/lib/ant.jar"));
         s = c.getCommandline();
         assertEquals("with classpath", 6, s.length);
         //        assertEquals("with classpath", "java", s[0]);
         assertEquals("with classpath", "-Djava.compiler=NONE", s[1]);
         assertEquals("with classpath", "-classpath", s[2]);
-        assertTrue("junit.jar contained",
-               s[3].indexOf("junit.jar"+java.io.File.pathSeparator) >= 0);
+        /*assertTrue("junit.jar contained", 
+               s[3].indexOf("junit.jar"+java.io.File.pathSeparator) >= 0);*///SAEG
+        assertTrue("tools.jar contained", s[3].indexOf("tools.jar"+java.io.File.pathSeparator) >= 0);//SAEG
         assertTrue("ant.jar contained", s[3].endsWith("ant.jar"));
         assertEquals("with classpath", "junit.textui.TestRunner", s[4]);
         assertEquals("with classpath",
                      "org.apache.tools.ant.CommandlineJavaTest", s[5]);
-    }*/
+    }
 
     public void testJarOption() throws Exception {
         CommandlineJava c = new CommandlineJava();
