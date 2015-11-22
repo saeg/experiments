@@ -1814,7 +1814,7 @@ public class Project {
 
 
 
-            if (old != null && (old instanceof UnknownElement)) {
+            if (old != null && !(old instanceof UnknownElement)) {
 
                 log("Overriding previous definition of reference to " + name,
                     MSG_WARN);
