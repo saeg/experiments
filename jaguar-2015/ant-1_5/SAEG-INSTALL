@@ -3,7 +3,7 @@ In the SIR repository this is version v4.
 - Several classes were changed to run in java 7. 
 - Some other classes were excluded (files finished as java.saeg)
 - Several tests were commented and ignored
-- This version already contains the fault EA_HD_1 in the file EnumeratedAttribute, see EnumeratedAttribute.cpp.
+- This version already contains the fault DEW_AK_1 in the file DOMElementWriter, see DOMElementWriter.cpp.
 
 Installing
 - copy the folder into your workspace
