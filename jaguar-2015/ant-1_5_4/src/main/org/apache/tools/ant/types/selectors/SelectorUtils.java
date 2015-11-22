@@ -239,7 +239,7 @@ public final class SelectorUtils {
         if (strIdxStart > strIdxEnd) {
             // String is exhausted
             for (int i = patIdxStart; i <= patIdxEnd; i++) {
-            	if (patDirs[i] == "**") {
+            	if (!patDirs[i].equals("**")) {
                     patDirs = null;
                     strDirs = null;
                     return false;
