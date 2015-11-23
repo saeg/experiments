@@ -7,7 +7,7 @@ HSQLDB 2.2.3
 Installing
 - copy the folder into your workspace
 - create a project with the folder's name
-- keep only src/ ans test-src/ as source folders. Exclude all other folders from the build path
-- configure output folder properties for the source folders: {project_name}/classes for src/ and {project_name}/test-classes for test-src/
+- keep only src ans test-src as source folders. Exclude all other folders from the build path
+- select the output folder as {project_name}/classes for src and {project_name}/test-classes for test-src
 - include all external jars of lib folders in the build path
 - include JUnit library as JUnit4
