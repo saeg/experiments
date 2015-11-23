@@ -1,0 +1,7 @@
+DOUBQUOTE,SINGQUOTE
+noquoteA  	noquoteB  
+"inch     	'foot     
+_""_      	_''_      
+"quoted"  	'quoted'  
+inch"     	foot'     
+"inch"    	'foot'    
