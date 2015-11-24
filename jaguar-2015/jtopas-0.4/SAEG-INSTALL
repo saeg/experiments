@@ -3,7 +3,7 @@ In the SIR repository this is version v1.
 - Several classes were changed to run in java 7. 
 - Some other classes were excluded (files finished as java.saeg)
 - Several tests were commented and ignored
-- This version already contains the fault FAULT_5 in the file AbstractTokenizer, see AbstractTokenizer.cpp.
+- This version already contains the fault FAULT_6 in the file AbstractTokenizer, see AbstractTokenizer.cpp.
 
 Installing
 - copy the folder into your workspace

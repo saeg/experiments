@@ -1556,14 +1556,14 @@ __MAIN_LOOP__:
     
     // test on keyword
     if (_keywords[0] != null || _keywords[1] != null) {
-      String keyword = new String(_inputBuffer, startingAtPos - _rangeStart + 1, length - 1);
+      String keyword = new String(_inputBuffer, startingAtPos - _rangeStart, length);
       
       if (_keywords[0] != null) {
         prop = (TokenizerProperty)_keywords[0].get(keyword);
       }
       if (prop == null && _keywords[1] != null) {
         keyword = keyword.toUpperCase();
-        prop    = (TokenizerProperty)_keywords[0].get(keyword);
+        prop    = (TokenizerProperty)_keywords[1].get(keyword);
       }
     }
     return prop;
@@ -1760,7 +1760,7 @@ __MAIN_LOOP__:
     TokenizerProperty prop = isKeyword(_currentReadPos + _rangeStart, len);
     
     if (prop != null) {
-      token.setType(Token.KEYWORD); 
+      token.setLength(Token.KEYWORD); 
       token.setCompanion(prop.getCompanion());
     } else {
       token.setType(Token.NORMAL);
