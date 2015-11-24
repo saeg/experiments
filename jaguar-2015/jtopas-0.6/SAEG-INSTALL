@@ -1,0 +1,13 @@
+jtopas 0.6
+In the SIR repository this is version v3.
+- Several classes were changed to run in java 7. 
+- Some other classes were excluded (files finished as java.saeg)
+- Several tests were commented and ignored
+- This version already contains the fault FAULT_4 in the file PluginTokenizer, see PluginTokenizer.cpp.
+
+Installing
+- copy the folder into your workspace
+- create a project with the folder's name
+- keep only src ans junit as source folders. Exclude all other folders from the build path
+- configure output folder properties for the source folders: {project_name}/classes for src and {project_name}/test-classes for junit
+- include JUnit library as JUnit4
