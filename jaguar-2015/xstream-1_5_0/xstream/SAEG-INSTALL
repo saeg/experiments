@@ -1,0 +1,26 @@
+xstream 1.5.0-SNAPSHOT - commit faa89f7bc86a978d10ff2791be24fc41404e7877
+previous commit 4f556412f5aec35e951ddaaa3bee1ee9b6d26f6a
+
+We named this version as v2.
+- Three test classes which fail without the fault were excluded
+--com.thoughtworks.acceptance.ClassLoaderTest (1 test case)
+--com.thoughtworks.acceptance.XStreamTest (4 test cases)
+--com.thoughtworks.xstream.core.utils.WeakCacheTest (1 test cases)
+- This version already contains the fault JBC_AK_1 in the file JavaBeanConverter, see JavaBeanConverter.cpp. The fault line is 83.
+- The fault is caused by Absense of code
+- Only the sub-project xstream was included
+- The junit-3.8.1.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml inside the folder xstream.
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 1643 test cases, one of which fails JavaBeanConverterTest.testRoundtripWithNullValue()
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/x-stream/xstream.git
+git checkout faa89f7bc86a978d10ff2791be24fc41404e7877
+git checkout 4f556412f5aec35e951ddaaa3bee1ee9b6d26f6a

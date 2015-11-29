@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1448833502499
+Build-Jdk: 1.7.0_80
+Built-By: higor
+Bundle-Description: XStream is a serialization library from Java objects
+  to XML and back.
+Bundle-DocURL: http://xstream.codehaus.org
+Bundle-License: http://xstream.codehaus.org/license.html
+Bundle-ManifestVersion: 2
+Bundle-Name: XStream Core
+Bundle-SymbolicName: xstream-1_5_0
+Bundle-Vendor: XStream
+Bundle-Version: 1.5.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.thoughtworks.xstream.io.copy;version="1.5.0.SNAPSHOT
+ ",com.thoughtworks.xstream.io.path;version="1.5.0.SNAPSHOT",com.thought
+ works.xstream.converters.basic;version="1.5.0.SNAPSHOT",com.thoughtwork
+ s.xstream.io.xml.xppdom;version="1.5.0.SNAPSHOT",com.thoughtworks.xstre
+ am;version="1.5.0.SNAPSHOT",com.thoughtworks.xstream.io.json;version="1
+ .5.0.SNAPSHOT",com.thoughtworks.xstream.converters.javabean;version="1.
+ 5.0.SNAPSHOT",com.thoughtworks.xstream.io;version="1.5.0.SNAPSHOT",com.
+ thoughtworks.xstream.converters.extended;version="1.5.0.SNAPSHOT",com.t
+ houghtworks.xstream.converters;version="1.5.0.SNAPSHOT",com.thoughtwork
+ s.xstream.converters.reflection;version="1.5.0.SNAPSHOT",com.thoughtwor
+ ks.xstream.annotations;version="1.5.0.SNAPSHOT",com.thoughtworks.xstrea
+ m.io.binary;version="1.5.0.SNAPSHOT",com.thoughtworks.xstream.io.xml;ve
+ rsion="1.5.0.SNAPSHOT",com.thoughtworks.xstream.mapper;version="1.5.0.S
+ NAPSHOT",com.thoughtworks.xstream.persistence;version="1.5.0.SNAPSHOT",
+ com.thoughtworks.xstream.security;version="1.5.0.SNAPSHOT",com.thoughtw
+ orks.xstream.converters.collections;version="1.5.0.SNAPSHOT",com.though
+ tworks.xstream.core;version="1.5.0.SNAPSHOT",com.thoughtworks.xstream.i
+ o.naming;version="1.5.0.SNAPSHOT",com.thoughtworks.xstream.converters.e
+ nums;version="1.5.0.SNAPSHOT"
+Import-Package: com.bea.xml.stream;resolution:=optional,com.ctc.wstx.sta
+ x;resolution:=optional,javax.security.auth,javax.swing,javax.swing.plaf
+ ,javax.xml.datatype,javax.xml.namespace;resolution:=optional,javax.xml.
+ parsers,javax.xml.stream;resolution:=optional,javax.xml.transform,javax
+ .xml.transform.sax,javax.xml.transform.stream,net.sf.cglib.proxy;resolu
+ tion:=optional,nu.xom;resolution:=optional,org.codehaus.jettison;versio
+ n="[1.2,2)";resolution:=optional,org.codehaus.jettison.mapped;version="
+ [1.2,2)";resolution:=optional,org.dom4j;resolution:=optional,org.dom4j.
+ io;resolution:=optional,org.dom4j.tree;resolution:=optional,org.jdom;re
+ solution:=optional,org.jdom.input;resolution:=optional,org.jdom2;resolu
+ tion:=optional,org.jdom2.input;resolution:=optional,org.joda.time;versi
+ on="[1.6,2)";resolution:=optional,org.joda.time.format;version="[1.6,2)
+ ";resolution:=optional,org.kxml2.io;resolution:=optional,org.w3c.dom;re
+ solution:=optional,org.xml.sax,org.xml.sax.helpers,org.xmlpull.mxp1,org
+ .xmlpull.v1,sun.misc
+Specification-Version: ${project.info.majorVersion}.${project.info.minor
+ Version}
+Tool: Bnd-1.50.0
