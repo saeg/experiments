@@ -1,6 +1,9 @@
 xstream 1.5.0-SNAPSHOT - commit faa89f7bc86a978d10ff2791be24fc41404e7877
 previous commit 4f556412f5aec35e951ddaaa3bee1ee9b6d26f6a
 
+Bug description: JavaBeanConverter: Always serialize fields with null values, fixes #5
+URL: https://github.com/x-stream/
+
 We named this version as v2.
 - Three test classes which fail without the fault were excluded
 --com.thoughtworks.acceptance.ClassLoaderTest (1 test case)
