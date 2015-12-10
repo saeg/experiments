@@ -1,0 +1,25 @@
+jsoup 1.6.1 - commit 3d6f1e47ccf93d01364ed5f7603fa66d43eae0e2
+previous commit f36b950de16f6db134bd98969cd8fbe578d37480
+
+Bug issue: #107
+Description: Fixed issue where a single 0 character was lexed incorrectly as a null character.
+
+Changes
+- This version already contains the fault CR_1 in the file TreeBuilderState, see TreeBuilderState.cpp. The faulty line is 1451.
+- The fault is a wrong value passed to a method call of a Java default library in a static global variable. 
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 290 test cases, one of which fails, ParserTest.handles0CharacterAsText()
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 3d6f1e47ccf93d01364ed5f7603fa66d43eae0e2
+git checkout f36b950de16f6db134bd98969cd8fbe578d37480
