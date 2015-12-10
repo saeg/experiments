@@ -2,7 +2,7 @@ jsoup 1.6.1 - commit 128b3f8212e357468cb608546a52da3826903fad
 previous commit 3d6f1e47ccf93d01364ed5f7603fa66d43eae0e2
 
 Bug issue: #110
-Description: Fixed issue where a single 0 character was lexed incorrectly as a null character.
+Description: Fixed normalisation of carriage returns to newlines on input HTML.
 
 Changes
 - This version already contains the fault CR_1 in the file CharacterReader, see CharacterReader.cpp. The faulty lines are .
