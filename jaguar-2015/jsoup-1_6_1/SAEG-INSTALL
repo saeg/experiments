@@ -5,7 +5,7 @@ Bug issue: #110
 Description: Fixed normalisation of carriage returns to newlines on input HTML.
 
 Changes
-- This version already contains the fault CR_1 in the file CharacterReader, see CharacterReader.cpp. The faulty lines are .
+- This version already contains the fault CR_1 in the file CharacterReader, see CharacterReader.cpp. The faulty lines are 17, 18 and 99.
 - There are two related faults in the class and the bugs interfere in the number of failures. 
   The fixes are related to the same problem. Missing code (constructor) and a wrong value passed 
   to a method call of a Java default library (method consumeToEnd()).
