@@ -1,0 +1,26 @@
+jsoup 1.6.1 - commit 7fe868089855c33d6345e740bfdbe6f140794598
+previous commit 7b47828bc2cf749edfb0f75e370f168c6b1be210
+
+Bug issue: #104
+Description: Fixed an issue when parsing <script> tags.
+
+Changes
+- This version already contains the fault TBS_2 in the files TreeBuilderState, see TreeBuilderState.cpp. 
+  The faulty line is 283.
+- The fault is a missing parameter in a method call (missing code). 
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 278 test cases, one of which fails - ParserTest.handlesDataOnlyTags().
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 7fe868089855c33d6345e740bfdbe6f140794598
+git checkout 7b47828bc2cf749edfb0f75e370f168c6b1be210
