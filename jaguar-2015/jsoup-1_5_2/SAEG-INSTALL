@@ -1,0 +1,24 @@
+jsoup 1.5.2 - commit db9efbd54c6ff876768eb874f7e9fe84a6632729
+previous commit 694efa8bac3d66717efe7e202e47347355e07c0b
+
+Bug issue: 
+Description: Have <br> output as " " for Element.ownText()
+
+Changes
+- This version already contains the fault E_1 in the file Element, see Element.cpp. The faulty lines are 765,766,and 767.
+- The is a missing code of a else if condition. The other changes in the method are just refactor.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 250 test cases, one of which fails ElementTest.testBrHasSpace()
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout db9efbd54c6ff876768eb874f7e9fe84a6632729
+git checkout 694efa8bac3d66717efe7e202e47347355e07c0b
