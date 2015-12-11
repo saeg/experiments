@@ -1,0 +1,30 @@
+jsoup 1.5.3 - commit 411c01ff53f56f0b84bee210ad75c8c2114efa55
+previous commit 71608a8424e1ad5d110a71d93313c370b2923411
+
+Bug issue: #97
+Description: Improved "abs:" absolute URL handling in Elements.attr("abs:href") and Node.hasAttr("abs:href").
+
+Changes
+- This version already contains the fault N_1 and N_2 in the file Node, see Node.cpp. 
+  The faulty line are 73, and 106 to 111.
+- There are two related faults: N_1 at line 73, there is a call to a wrong method. 
+  N_2 at the lines 106 to 11 are new code (missing code). 
+  The presence of both faults leads to 4 failures (the same test cases). N_2 is dominant: the 4 failures occur 
+  independent of the presence of N_1. N_1 has 6 failures without N_2.
+  The faults are related to the same fixing.n The results are similar for both faults.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 269 test cases, four failures.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 411c01ff53f56f0b84bee210ad75c8c2114efa55
+git checkout 71608a8424e1ad5d110a71d93313c370b2923411
