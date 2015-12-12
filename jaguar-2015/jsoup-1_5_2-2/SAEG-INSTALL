@@ -1,0 +1,24 @@
+jsoup 1.5.2 - commit 694efa8bac3d66717efe7e202e47347355e07c0b
+previous commit 29c9d48278aafb4a4390e3ee923cd68e6086a17f
+
+Bug issue: 
+Description: Tweaked Element.outerHtml() method to not generate initial newline on first output element.
+
+Changes
+- This version already contains the fault E_2 in the file Element, see Element.cpp. The faulty line is 960.
+- Missing code in an If statement
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 250 test cases, five of which fail
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 694efa8bac3d66717efe7e202e47347355e07c0b
+git checkout 29c9d48278aafb4a4390e3ee923cd68e6086a17f
