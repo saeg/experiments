@@ -1,0 +1,25 @@
+jsoup 1.5.2 - commit e42cce476c0749899dcf7d50ba36aa1dbdaf7fbf
+previous commit a14fb16d6430d8de4bf31c898d119ab713840c2d
+
+Bug issue: 
+Description: Allow <a> and <font> elements to be treated as flow/block elements, to match browser parse trees.
+
+Changes
+- This version already contains the fault T_1 in the file Tag, see Tag.cpp. The faulty line is 280.
+- Missing code.
+- There is another fault, but there is no interference between them in the test results.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 248 test cases, one of which fails
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout e42cce476c0749899dcf7d50ba36aa1dbdaf7fbf
+git checkout a14fb16d6430d8de4bf31c898d119ab713840c2d
