@@ -277,8 +277,8 @@ public class Tag {
         createBlock("FOOTER").setExcludes("HEADER", "FOOTER");
 
         // fontstyle
-        createInline("FONT");//SAEG - FAULT
-        //createInline("FONT").setOptionalClosing().setCanContainBlock().setFormatAsInline();//SAEG - FIXING
+        //createInline("FONT");//SAEG - FAULT
+        createInline("FONT").setOptionalClosing().setCanContainBlock().setFormatAsInline();//SAEG - FIXING
         createInline("TT");
         createInline("I");
         createInline("B");
@@ -306,8 +306,8 @@ public class Tag {
         createInline("RP").setParent("RUBY").setExcludes("RT", "RP");
 
         // special
-        //createInline("A").setOptionalClosing(); // cannot contain self //SAEG - FAULT
-        createInline("A").setOptionalClosing().setCanContainBlock().setFormatAsInline(); // cannot contain self //SAEG - FIXING
+        createInline("A").setOptionalClosing(); // cannot contain self //SAEG - FAULT
+        //createInline("A").setOptionalClosing().setCanContainBlock().setFormatAsInline(); // cannot contain self //SAEG - FIXING
         createInline("IMG").setEmpty().setAncestor("BODY", "NOSCRIPT"); // noscript so an image can be in html->head->noscript
         createInline("BR").setEmpty();
         createInline("WBR").setEmpty();

@@ -5,7 +5,7 @@ Bug issue:
 Description: Allow <a> and <font> elements to be treated as flow/block elements, to match browser parse trees.
 
 Changes
-- This version already contains the fault T_1 in the file Tag, see Tag.cpp. The faulty line is 280.
+- This version already contains the fault T_2 in the file Tag, see Tag.cpp. The faulty line is 309.
 - Missing code.
 - There is another fault, but there is no interference between them in the test results.
 - Approximately 16K of Java code.
