@@ -1,0 +1,24 @@
+jsoup 1.5.2 - commit 29c9d48278aafb4a4390e3ee923cd68e6086a17f
+previous commit 65e846daa35e9e09172946848285cce4701a6ced
+
+Bug issue: 
+Description: Updated Element.text() method to ensure <br> tags output as whitespace.
+
+Changes
+- This version already contains the fault E_3 in the file Element, see Element.cpp. The faulty lines are 729 and 730.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 249 test cases, one of which fails ElementTest.testBrHasSpace()
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 29c9d48278aafb4a4390e3ee923cd68e6086a17f
+git checkout 65e846daa35e9e09172946848285cce4701a6ced
