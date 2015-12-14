@@ -1,0 +1,24 @@
+jsoup 1.4.2 - commit f317c04acf821d61601f5d986252db40505153bc
+previous commit 277949e7115059f6f0071e1b3418b6f6cbf48e48
+
+Bug issue: 
+Description: Force strict entity matching (must be &xxx; and not &xxx) in element attributes.
+
+Changes
+- This version already contains the fault ET_1 in the file Entities, see Entities.cpp. The faulty line is 76.
+- Missing code in an if condition.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 239 test cases, two of which fail
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout f317c04acf821d61601f5d986252db40505153bc
+git checkout 277949e7115059f6f0071e1b3418b6f6cbf48e48
