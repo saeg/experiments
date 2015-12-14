@@ -1,0 +1,26 @@
+jsoup 1.5.2 - commit a14fb16d6430d8de4bf31c898d119ab713840c2d
+previous commit 7d1723336c20ee0c31d0b4ed11a252c9e29abe97
+
+Bug issue: 
+Description: Fixed issue with selector parser where some boolean AND + OR combined queries 
+(e.g. "meta[http-equiv], meta[content]") were being parsed incorrectly as OR only queries 
+(e.g. former as "meta, [http-equiv], meta[content]")
+
+Changes
+- This version already contains the fault CE_1 in the file CombiningEvaluator, see CombiningEvaluator.cpp. The faulty line is 57.
+- Wrong method calling.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 245 test cases, one of which fails
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout a14fb16d6430d8de4bf31c898d119ab713840c2d
+git checkout 7d1723336c20ee0c31d0b4ed11a252c9e29abe97
