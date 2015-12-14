@@ -1,0 +1,24 @@
+jsoup 1.4.2 - commit d0a7e3a00350ea9bdca6a1f005ccc75e5b2d19d4
+previous commit 43a39b308abfbe39ea06729277d0630786b9956d
+
+Bug issue: #52
+Description: Fixed issue when using descendant regex attribute selectors.
+
+Changes
+- This version already contains the fault S_1 in the file Selector, see Selector.cpp. The faulty line is 139.
+- Wrong method call.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 297 test cases, one of which causes an error
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout d0a7e3a00350ea9bdca6a1f005ccc75e5b2d19d4
+git checkout 43a39b308abfbe39ea06729277d0630786b9956d
