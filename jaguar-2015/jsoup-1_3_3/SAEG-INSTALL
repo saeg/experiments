@@ -1,0 +1,24 @@
+jsoup 1.3.3 - commit 20ed24cefb5df53c48021459af98bef83c55f241
+previous commit 0b56f3e5e012e689af8dda0e96d6e0c9f31853b6
+
+Bug issue: 
+Description: Fixed issue in Entities when unescaping &#36; ("$").
+
+Changes
+- This version already contains the fault E_1 in the file Entities, see Entities.cpp. The faulty lines are 70 and 73.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 223 test cases, one of which fails
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 20ed24cefb5df53c48021459af98bef83c55f241
+git checkout 0b56f3e5e012e689af8dda0e96d6e0c9f31853b6
