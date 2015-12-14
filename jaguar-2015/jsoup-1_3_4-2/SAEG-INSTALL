@@ -1,0 +1,24 @@
+jsoup 1.3.4 - commit 2e4969497c5734d90d394103728bb517644f9157
+previous commit da9b977ef99e2595602a964561906a930b4332f3
+
+Bug issue: #46
+Description: Fixed support for HTML entities with numbers in name (e.g. &frac34, &sup1).
+
+Changes
+- This version already contains the fault ET_1 in the file Entities, see Entities.cpp. The faulty line is 38.
+- Wrong value assigned to a global variable.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 227 test cases, one of which fails
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 2e4969497c5734d90d394103728bb517644f9157
+git checkout da9b977ef99e2595602a964561906a930b4332f3
