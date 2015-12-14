@@ -1,0 +1,24 @@
+jsoup 1.3.4 - commit da9b977ef99e2595602a964561906a930b4332f3
+previous commit 82855b07f5336d30c70dc20548ab7ab8adeac05e
+
+Bug issue: #45
+Description: Support node.outerHtml() method when node has no parent.
+
+Changes
+- This version already contains the fault N_2 in the file Node, see Node.cpp. The faulty line is 363.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- include JUnit library as JUnit4
+
+- There is a total of 227 test cases, one of which fails
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout da9b977ef99e2595602a964561906a930b4332f3
+git checkout 82855b07f5336d30c70dc20548ab7ab8adeac05e
