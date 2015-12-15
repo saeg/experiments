@@ -96,8 +96,8 @@ class CharacterReader {
     }
 
     String consumeToEnd() {
-        String data = input.substring(pos, input.length()-1);//SAEG - FAULT
-        //String data = input.substring(pos, input.length());//SAEG - FIXING
+        //String data = input.substring(pos, input.length()-1);//SAEG - FAULT
+        String data = input.substring(pos, input.length());//SAEG - FIXING
         pos = input.length();
         return data;
     }

@@ -5,8 +5,8 @@ Bug issue: #110
 Description: Fixed normalisation of carriage returns to newlines on input HTML
 
 Changes
-- This version already contains the faults CR_2 and CR_3 in the files CharacterReader, see CharacterReader.cpp. 
-  The faulty line are 17,18, and 99.
+- This version already contains the fault CR_2 in the file CharacterReader, see CharacterReader.cpp. 
+  The faulty line are 17, and 18.
 - The faults are related to the same issue, a missing code and a wrong value passed as parameter to a java library call.
 -  With both bugs, three test cases fail. With CR_2, two tests fail. With CR_3, two tests fail.
 - There are no interferences in the test results when the two bugs are present and one test fails in common for both 
@@ -20,7 +20,7 @@ Installing
 - change the project's properties Java Compiler > Compiler compliance level to 1.7
 - include JUnit library as JUnit4
 
-- There is a total of 293 test cases, three of which fail with the two bugs.
+- There is a total of 293 test cases, two of which fail with the two bugs.
 
 
 Git commands used to obtain the fault:
