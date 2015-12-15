@@ -1,0 +1,26 @@
+jsoup 1.6.3 - commit 8963e2ac79a97e694c388622e935a0471267e9eb
+previous commit 009013169754d4869f3a55c27a3443fc72d1d1f1
+
+Bug issue: #215
+Description: If the charset from the server is not supported, fail-back to UTF8.
+
+Changes
+- This version already contains the fault DU_1 in the file DataUtils, see DataUtils.cpp. 
+  The faulty line is 131.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 347 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 8963e2ac79a97e694c388622e935a0471267e9eb
+git checkout 009013169754d4869f3a55c27a3443fc72d1d1f1
