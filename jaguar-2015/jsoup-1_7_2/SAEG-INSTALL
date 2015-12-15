@@ -1,0 +1,26 @@
+jsoup 1.7.2 - commit c3c952e55f10b07dd9d4a9121db1b3828b0a1bc7
+previous commit d94f56c25485b622ebf3b35b71868c74b9501ece
+
+Bug issue: #258
+Description: When parsing, allow all tags to self-close. Tags that aren't expected to self-close will get an end tag.
+
+Changes
+- This version already contains the fault HTB_1 in the file HtmlTreeBuilder, see HtmlTreeBuilder.cpp. 
+  The faulty lines are 148 and 151.
+- Missing code and wrong method call.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 367 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout c3c952e55f10b07dd9d4a9121db1b3828b0a1bc7
+git checkout d94f56c25485b622ebf3b35b71868c74b9501ece
