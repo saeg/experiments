@@ -1,0 +1,27 @@
+jsoup 1.6.3 - commit 1d37cef1d8367af963fee4dc99164708f5d3c6f8
+previous commit dbc1e34bdeede1cabee58b65bceb02f930ce5d88
+
+Bug issue: #145
+Description: Fixed HTML entity parser to correctly parse entities like frac14 (letter + number combo).
+
+Changes
+- This version already contains the fault T_1 in the file Tokeniser, see Tokeniser.cpp. 
+  The faulty line is 135.
+- Wrong method called. There is the addition of a new method to complement the fixing ( CharacterReader.consumeLetterThenDigitSequence() ).
+- This fault can also deemed a missing code in the method consumeLetterSequence(), line 115, which is fixed by CharacterReader.consumeLetterThenDigitSequence().
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 326 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 1d37cef1d8367af963fee4dc99164708f5d3c6f8
+git checkout dbc1e34bdeede1cabee58b65bceb02f930ce5d88
