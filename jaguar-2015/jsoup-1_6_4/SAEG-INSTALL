@@ -1,0 +1,26 @@
+jsoup 1.6.4 - commit a97385eb2870d113427b0d9430e108236ae363b4
+previous commit 002a4940935a7545ed94f1b776e4d7f6bf6c2525
+
+Bug issue: #156
+Description: Fixed issue with :all pseudo-tag in HTML sanitizer when cleaning tags
+
+Changes
+- This version already contains the fault W_1 in the file Whitelist, see Whitelist.cpp. 
+  The faulty lines are from 333 to 336.
+- Wrong else statement condition.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 328 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout a97385eb2870d113427b0d9430e108236ae363b4
+git checkout 002a4940935a7545ed94f1b776e4d7f6bf6c2525
