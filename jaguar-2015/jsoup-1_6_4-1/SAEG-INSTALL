@@ -1,0 +1,26 @@
+jsoup 1.6.3 - commit 82f8683129e83b2d7ad9c95efcd4777212d13762
+previous commit 547a11475d71479b7e7bb25b1ebc592bf44b6fe1
+
+Bug issue: #214
+Description: Fixed an issue when normalising whitespace for strings containing high-surrogate characters.
+
+Changes
+- This version already contains the fault SU_1 in the file StringUtils, see StringUtils.cpp. 
+  The faulty lines are 113 and 114.
+- Wrong value assigned to a for statement.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 347 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 82f8683129e83b2d7ad9c95efcd4777212d13762
+git checkout 547a11475d71479b7e7bb25b1ebc592bf44b6fe1
