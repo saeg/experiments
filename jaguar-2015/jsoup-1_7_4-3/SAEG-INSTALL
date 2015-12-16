@@ -1,0 +1,26 @@
+jsoup 1.7.4 - commit 9e9e15856d41f55cee4a215acae3c3866e78d200
+previous commit c07ba8a34b6a6d6665928e106fea67bd9144e4e0
+
+Bug issue: #364
+Description: Don't parse <img> as <image> when in <svg>.
+
+Changes
+- This version already contains the fault HTBS_1 in the file HtmlTreeBuilderState, see HtmlTreeBuilderState.cpp. 
+  The faulty lines are 456 and 457.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 409 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 9e9e15856d41f55cee4a215acae3c3866e78d200
+git checkout c07ba8a34b6a6d6665928e106fea67bd9144e4e0
