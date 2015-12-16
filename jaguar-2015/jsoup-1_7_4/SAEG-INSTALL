@@ -1,0 +1,26 @@
+jsoup 1.7.2 - commit 32ab9579f9df6f4c9dbab5e6e035dd5f8d644e2a
+previous commit 80158d6fa7445506eaaafdeadb1f4dc291ca10a5
+
+Bug issue: #299
+Description: Fix issue with invalid document when script tag is whitelisted.
+
+Changes
+- This version already contains the fault C_1 in the file Cleaner (class Cleaner$CleaningVisitor), see Cleaner.cpp. 
+  The faulty line is 104.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 414 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 32ab9579f9df6f4c9dbab5e6e035dd5f8d644e2a
+git checkout 80158d6fa7445506eaaafdeadb1f4dc291ca10a5
