@@ -1,0 +1,26 @@
+jsoup 1.7.2 - commit 0e37cba87eea9d89156c144e3d4298c9c9ed04d4
+previous commit fa87a8fe2838e80ae0eeba6e2978815ef5533e91
+
+Bug issue: #278
+Description: Don't clone the element's classnames.
+
+Changes
+- This version already contains the fault E_1 in the file Element, see Element.cpp. 
+  The faulty line is 1138.
+- Wrong value assigned to a variable.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 365 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 0e37cba87eea9d89156c144e3d4298c9c9ed04d4
+git checkout fa87a8fe2838e80ae0eeba6e2978815ef5533e91
