@@ -1,0 +1,26 @@
+jsoup 1.7.4 - commit c07ba8a34b6a6d6665928e106fea67bd9144e4e0
+previous commit be64f746f9f034e524f8d9bfb9748d19054c8772
+
+Bug issue: #368
+Description: If pretty-print is disabled, don't trim outer whitespace in Element.html().
+
+Changes
+- This version already contains the fault E_1 in the file Element, see Element.cpp. 
+  The faulty line is 1101.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 408 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout c07ba8a34b6a6d6665928e106fea67bd9144e4e0
+git checkout be64f746f9f034e524f8d9bfb9748d19054c8772
