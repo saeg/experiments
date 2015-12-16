@@ -1,0 +1,26 @@
+jsoup 1.7.4 - commit 3f9f33d88355f22aefc7ea402da09fd1950289ce
+previous commit 6c4f16f233cdfd7aedef33374609e9aa4ede255c
+
+Bug issue: #348
+Description: Fix issue with UTF-8 BOM when charset only in HTML.
+
+Changes
+- This version already contains the fault DU_1 in the file DataUtils, see DataUtils.cpp. 
+  The faulty lines are 125 and 126.
+- Code placed in a wrong flow.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 413 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 3f9f33d88355f22aefc7ea402da09fd1950289ce
+git checkout 6c4f16f233cdfd7aedef33374609e9aa4ede255c
