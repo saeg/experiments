@@ -1,0 +1,26 @@
+jsoup 1.7.3 - commit 76399e5b273d63d6affeb94597d8dfddce811964
+previous commit 88730bf9f399aab6a150212faeea012598be9ec6
+
+Bug issue: #313
+Description: Fixed an issue where elements added via the adoption agency algorithm did not preserve their attributes.
+
+Changes
+- This version already contains the fault HTBS_1 in the file HtmlBuilderTreeState, see HtmlBuilderTreeState.cpp. 
+  The faulty line is 725.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 401 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 76399e5b273d63d6affeb94597d8dfddce811964
+git checkout 88730bf9f399aab6a150212faeea012598be9ec6
