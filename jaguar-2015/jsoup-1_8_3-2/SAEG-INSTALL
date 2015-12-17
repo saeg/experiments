@@ -1,0 +1,26 @@
+jsoup 1.8.3 - commit a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
+previous commit 1e09df66f0302958d547037e7258913b3069f2b6
+
+Bug issue: #528
+Description: Escape < in XML attributes.
+
+Changes
+- This version already contains the fault E_2 Entities, see Entities.cpp. 
+- The faulty line is 121.
+- Missing code in an if statement. 
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 466 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
+git checkout 1e09df66f0302958d547037e7258913b3069f2b6
