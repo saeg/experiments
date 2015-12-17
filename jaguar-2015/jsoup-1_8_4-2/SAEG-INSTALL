@@ -1,0 +1,26 @@
+jsoup 1.8.4 - commit 73b52d0d995b8c6091c0e92f8ada03a2753b576a
+previous commit 3bdad1f1113d27dc74e3e9c631696bb14b61a599
+
+Bug issue: #614
+Description: Dedupe elements by identity, not equality.
+
+Changes
+- This version already contains the fault S_1 in the file Selector, see Selector.cpp. 
+- The faulty lines are 132 and 138.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 467 test cases, two of which fail.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 73b52d0d995b8c6091c0e92f8ada03a2753b576a
+git checkout 3bdad1f1113d27dc74e3e9c631696bb14b61a599
