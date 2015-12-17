@@ -1,0 +1,30 @@
+jsoup 1.8.2 - commit c01fcd338d73dc039e6a3a6cd2c449d9c9d41304
+previous commit 0c10dbffb475febe05ebaf074278e5d5aa81e32c
+
+Bug issue: #489
+Description: Form data submission fix. Don’t submit disabled elements.
+			 Set checkbox and radio to default val ‘on’ if unset.
+
+Changes
+- This version already contains the faults FE_1 and FE_2 in the file FileElement, see FileElement.cpp. 
+  The faulty lines are 80, 99 and 100.
+- Missing code.
+- With both faults, two test cases fail, with FE_1 only one test fails, and with FE_2 both tests fail.
+- Although the faults are related to the same fix, they solve different aspects of the domain 
+  (radio button on html pages).
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 438 test cases, two of which fail.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout c01fcd338d73dc039e6a3a6cd2c449d9c9d41304
+git checkout 0c10dbffb475febe05ebaf074278e5d5aa81e32c
