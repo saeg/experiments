@@ -1,0 +1,26 @@
+jsoup 1.8.4 - commit 0aa50cd30a0497208057581c79ce63df2053f1a4
+previous commit 658bb5ca24648dd309b9e2fd1690c17c12434b7e
+
+Bug issue: #619
+Description: Fix "Parent" Evaluator ignores "root" argument for matches.
+
+Changes
+- This version already contains the fault SE_1 in the file StructuralEvaluator, see StructuralEvaluator.cpp. 
+  The faulty line is 61.
+- Missing code and wrong value passed to a while statement.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 466 test cases, two of which fail.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 0aa50cd30a0497208057581c79ce63df2053f1a4
+git checkout 658bb5ca24648dd309b9e2fd1690c17c12434b7e
