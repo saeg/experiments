@@ -1,0 +1,26 @@
+jsoup 1.8.3 - commit 3b4f9dfa91b6f1852c35baf79c4a13eacc6112c3
+previous commit 5be8b081ce931865d46b49ed44e19d3eafde748d
+
+Bug issue: #575
+Description: Fix table insertion into TH tags.
+
+Changes
+- This version already contains the faults HTB_1 in the class HtmlTreeBuilder, see HtmlTreeBuilder.cpp. 
+- The faulty line is 394.
+- Typo error in an if statement. 
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 460 test cases, two of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 3b4f9dfa91b6f1852c35baf79c4a13eacc6112c3
+git checkout 5be8b081ce931865d46b49ed44e19d3eafde748d
