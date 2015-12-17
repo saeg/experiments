@@ -1,0 +1,26 @@
+jsoup 1.8.3 - commit 3ba88d8c2ab500c07f9e2ddbc07a4bd01fadbd78
+previous commit ddf4c1bcae69ad48c01eea207e3f3c24d2eda208
+
+Bug issue: #523
+Description: Fixed &nbsp; for XHTML in Shift_JS.
+
+Changes
+- This version already contains the fault E_1 Entities, see Entities.cpp. 
+- The faulty line is 118.
+- Wrong value passed to a method. 
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 463 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 3ba88d8c2ab500c07f9e2ddbc07a4bd01fadbd78
+git checkout ddf4c1bcae69ad48c01eea207e3f3c24d2eda208
