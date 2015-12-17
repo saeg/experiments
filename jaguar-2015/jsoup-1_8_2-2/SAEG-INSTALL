@@ -1,0 +1,26 @@
+jsoup 1.8.2 - commit 11f7c1bd7a2d12f0b1150aa246c61afefd11991f
+previous commit 373ea35b2cb227b56694aa50589c853b68caa03a
+
+Bug issue: #554
+Description: Search for element siblings by identity not content.
+
+Changes
+- This version already contains the fault E_1 Element, see Element.cpp. 
+  The faulty line is 574.
+- Wrong comparison in an if statement.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 454 test cases, two of which fail.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 11f7c1bd7a2d12f0b1150aa246c61afefd11991f
+git checkout 373ea35b2cb227b56694aa50589c853b68caa03a
