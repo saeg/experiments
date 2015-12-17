@@ -3,7 +3,7 @@ previous commit 0c10dbffb475febe05ebaf074278e5d5aa81e32c
 
 Bug issue: #489
 Description: Form data submission fix. Don’t submit disabled elements.
-			 Set checkbox and radio to default val ‘on’ if unset.
+	     Set checkbox and radio to default val ‘on’ if unset.
 
 Changes
 - This version already contains the fault FE_2 in the file FileElement, see FileElement.cpp. 
