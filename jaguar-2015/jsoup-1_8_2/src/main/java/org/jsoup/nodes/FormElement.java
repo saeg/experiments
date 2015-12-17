@@ -96,12 +96,12 @@ public class FormElement extends Element {
                 }
             } else if ("checkbox".equalsIgnoreCase(type) || "radio".equalsIgnoreCase(type)) {
                 // only add checkbox or radio if they have the checked attribute
-            	if (el.hasAttr("checked"))//SAEG - FAULT
-            		data.add(HttpConnection.KeyVal.create(name, el.val()));//SAEG - FAULT
-            	/*if (el.hasAttr("checked")) {
+            	/*if (el.hasAttr("checked"))//SAEG - FAULT
+            		data.add(HttpConnection.KeyVal.create(name, el.val()));*///SAEG - FAULT
+            	if (el.hasAttr("checked")) {
                     final String val = el.val().length() >  0 ? el.val() : "on";
                     data.add(HttpConnection.KeyVal.create(name, val));
-                }*///SAEG - FIXING
+                }//SAEG - FIXING
             } else {
                 data.add(HttpConnection.KeyVal.create(name, el.val()));
             }
