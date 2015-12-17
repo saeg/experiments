@@ -1,13 +1,15 @@
-jsoup 1.8.3 - commit a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
-previous commit 1e09df66f0302958d547037e7258913b3069f2b6
+jsoup 1.8.3 - commit 3ba88d8c2ab500c07f9e2ddbc07a4bd01fadbd78 / a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
+previous commit ddf4c1bcae69ad48c01eea207e3f3c24d2eda208 / 1e09df66f0302958d547037e7258913b3069f2b6
 
 Bug issue: #528
 Description: Escape < in XML attributes.
 
 Changes
-- This version already contains the fault E_2 Entities, see Entities.cpp. 
-- The faulty line is 121.
-- Missing code in an if statement. 
+- This version already contains the faults E_1 and E_2 in the class Entities, see Entities.cpp. 
+- This version was created for experiments with two faults joining two faults from different commits
+  Either faults do not interference in the results of the other.
+- The faulty line are 118 / 122.
+- Wrong value passed to a method / Missing code in an if statement. 
 - Approximately 16K of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
@@ -17,10 +19,10 @@ Installing
 - change the project's properties Java Compiler > Compiler compliance level to 1.7
 - include JUnit library as JUnit4
 
-- There is a total of 466 test cases, one of which fails.
+- There is a total of 466 test cases, two of which fails.
 
 
 Git commands used to obtain the fault:
 git clone https://github.com/michael-simons/jsoup.git
-git checkout a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
-git checkout 1e09df66f0302958d547037e7258913b3069f2b6
+git checkout 3ba88d8c2ab500c07f9e2ddbc07a4bd01fadbd78 / a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
+git checkout ddf4c1bcae69ad48c01eea207e3f3c24d2eda208 / 1e09df66f0302958d547037e7258913b3069f2b6

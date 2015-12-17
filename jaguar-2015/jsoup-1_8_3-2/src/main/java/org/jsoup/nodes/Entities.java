@@ -115,7 +115,8 @@ public class Entities {
                         if (escapeMode != EscapeMode.xhtml)
                             accum.append("&nbsp;");
                         else
-                        	accum.append("&#xa0;");
+                        	accum.append(c);//SAEG - FAULT
+                        	//accum.append("&#xa0;");//SAEG - FIXING
                         break;
                     case '<':
                     	if (!inAttribute)//SAEG - FAULT
