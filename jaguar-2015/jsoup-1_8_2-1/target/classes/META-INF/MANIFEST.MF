@@ -17,7 +17,7 @@ Bundle-Name: jsoup
 Created-By: 1.7.0_80 (Oracle Corporation)
 Bundle-Vendor: Jonathan Hedley
 Bundle-Version: 1.8.2.SNAPSHOT
-Bnd-LastModified: 1450316515041
+Bnd-LastModified: 1450381124446
 Bundle-ManifestVersion: 2
 Bundle-License: http://jsoup.org/license
 Bundle-Description: jsoup HTML parser
