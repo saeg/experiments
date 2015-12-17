@@ -6,8 +6,8 @@ Description: Form data submission fix. Don’t submit disabled elements.
 			 Set checkbox and radio to default val ‘on’ if unset.
 
 Changes
-- This version already contains the fault FE_1 in the file FileElement, see FileElement.cpp. 
-  The faulty line is 80.
+- This version already contains the fault FE_2 in the file FileElement, see FileElement.cpp. 
+  The faulty lines are 99 and 100.
 - Missing code.
 - With both faults, two test cases fail, with FE_1 only one test fails, and with FE_2 both tests fail.
 - Although the faults are related to the same fix, they solve different aspects of the domain 
