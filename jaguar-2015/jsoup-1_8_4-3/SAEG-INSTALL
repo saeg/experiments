@@ -1,0 +1,26 @@
+jsoup 1.8.4 - commit 65553582d184e18de10e496b0eaa53fbe206ba17
+previous commit 73b52d0d995b8c6091c0e92f8ada03a2753b576a
+
+Bug issue: #618
+Description: Combine header values with comma.
+
+Changes
+- This version already contains the fault HC_1 in the file HttpConnector, see HttpConnector.cpp. 
+- The faulty line is 773.
+- Missing code.
+- Approximately 16K of Java code.
+- The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
+
+Installing
+- import the project as an existing maven project. Use the file pom.xml
+- ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
+- include JUnit library as JUnit4
+
+- There is a total of 468 test cases, one of which fails.
+
+
+Git commands used to obtain the fault:
+git clone https://github.com/michael-simons/jsoup.git
+git checkout 65553582d184e18de10e496b0eaa53fbe206ba17
+git checkout 73b52d0d995b8c6091c0e92f8ada03a2753b576a
