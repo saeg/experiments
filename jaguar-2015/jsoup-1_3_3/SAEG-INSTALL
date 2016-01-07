@@ -7,7 +7,7 @@ Description: Fixed issue in Entities when unescaping &#36; ("$").
 Changes
 - This version already contains the fault E_1 in the file Entities, see Entities.cpp. The faulty lines are 70 and 73.
 - Missing code.
-- Approximately 16K of Java code.
+- 7998 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing
@@ -15,7 +15,7 @@ Installing
 - ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
 - include JUnit library as JUnit4
 
-- There is a total of 223 test cases, one of which fails
+- There is a total of 223 test cases, two of which cause errors
 
 
 Git commands used to obtain the fault:

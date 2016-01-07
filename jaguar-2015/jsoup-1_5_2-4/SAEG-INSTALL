@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault T_2 in the file Tag, see Tag.cpp. The faulty line is 309.
 - Missing code.
 - There is another fault, but there is no interference between them in the test results.
-- Approximately 16K of Java code.
+- 8833 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

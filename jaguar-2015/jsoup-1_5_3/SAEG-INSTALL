@@ -12,7 +12,7 @@ Changes
   The presence of both faults leads to 4 failures (the same test cases). N_2 is dominant: the 4 failures occur 
   independent of the presence of N_1. N_1 has 6 failures without N_2.
   The faults are related to the same fixing.n The results are similar for both faults.
-- Approximately 16K of Java code.
+- 12920 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

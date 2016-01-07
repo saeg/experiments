@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault E_1 Entities, see Entities.cpp. 
 - The faulty line is 118.
 - Wrong value passed to a method. 
-- Approximately 16K of Java code.
+- 14766 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

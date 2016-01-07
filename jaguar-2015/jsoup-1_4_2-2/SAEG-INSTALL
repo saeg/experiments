@@ -7,7 +7,7 @@ Description: Fixed issue when using descendant regex attribute selectors.
 Changes
 - This version already contains the fault S_1 in the file Selector, see Selector.cpp. The faulty line is 139.
 - Wrong method call.
-- Approximately 16K of Java code.
+- 9748 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

@@ -5,9 +5,9 @@ Bug issue: #49
 Description: Fixed absolute URL generation from relative URLs which are only query strings.
 
 Changes
-- This version already contains the fault N_1 in the file Nodes, see Nodes.cpp. The faulty line is 174.
+- This version already contains the fault N_1 in the file Node, see Node.cpp. The faulty line is 174.
 - Missing code.
-- Approximately 16K of Java code.
+- 8324 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

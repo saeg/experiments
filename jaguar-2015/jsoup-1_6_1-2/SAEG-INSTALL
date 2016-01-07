@@ -7,7 +7,7 @@ Description: Fixed issue where a single 0 character was lexed incorrectly as a n
 Changes
 - This version already contains the fault TBS_1 in the file TreeBuilderState, see TreeBuilderState.cpp. The faulty line is 1451.
 - The fault is a wrong value passed to a method call of a Java default library in a static global variable. 
-- Approximately 16K of Java code.
+- 13221 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

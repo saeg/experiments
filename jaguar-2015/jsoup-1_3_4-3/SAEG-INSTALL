@@ -7,7 +7,7 @@ Description: Support node.outerHtml() method when node has no parent.
 Changes
 - This version already contains the fault N_2 in the file Node, see Node.cpp. The faulty line is 363.
 - Missing code.
-- Approximately 16K of Java code.
+- 8219 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing
@@ -15,7 +15,7 @@ Installing
 - ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
 - include JUnit library as JUnit4
 
-- There is a total of 227 test cases, one of which fails
+- There is a total of 227 test cases, one of which causes error
 
 
 Git commands used to obtain the fault:

@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault TS_1 in the file TokeniserState, see TokeniserState.cpp. 
   The faulty line is 558.
 - Wrong call to a method.
-- Approximately 16K of Java code.
+- 13981 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

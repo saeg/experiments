@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault W_1 in the file Whitelist, see Whitelist.cpp. 
   The faulty lines are from 333 to 336.
 - Wrong else statement condition.
-- Approximately 16K of Java code.
+- 11873 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

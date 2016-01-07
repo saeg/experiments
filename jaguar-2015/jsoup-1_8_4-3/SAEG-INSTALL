@@ -5,10 +5,10 @@ Bug issue: #618
 Description: Combine header values with comma.
 
 Changes
-- This version already contains the fault HC_1 in the file HttpConnector, see HttpConnector.cpp. 
+- This version already contains the fault HC_1 in the file HttpConnection, see HttpConnection.cpp. 
 - The faulty line is 773.
 - Missing code.
-- Approximately 16K of Java code.
+- 14891 of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

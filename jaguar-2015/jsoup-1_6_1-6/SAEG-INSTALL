@@ -11,7 +11,7 @@ Changes
 -  With both bugs, three test cases fail. With CR_2, two tests fail. With CR_3, two tests fail.
 - There are no interferences in the test results when the two bugs are present and one test fails in common for both 
   isolated faults.
-- Approximately 16K of Java code.
+- 13242 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

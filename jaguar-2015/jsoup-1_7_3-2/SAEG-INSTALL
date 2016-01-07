@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault HTBS_1 in the file HtmlBuilderTreeState, see HtmlBuilderTreeState.cpp. 
   The faulty line is 725.
 - Missing code.
-- Approximately 16K of Java code.
+- 13208 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

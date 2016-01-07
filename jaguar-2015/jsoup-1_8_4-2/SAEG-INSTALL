@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault S_1 in the file Selector, see Selector.cpp. 
 - The faulty lines are 132 and 138.
 - Missing code.
-- Approximately 16K of Java code.
+- 14884 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing
@@ -17,7 +17,7 @@ Installing
 - change the project's properties Java Compiler > Compiler compliance level to 1.7
 - include JUnit library as JUnit4
 
-- There is a total of 467 test cases, two of which fail.
+- There is a total of 467 test cases, one of which fails.
 
 
 Git commands used to obtain the fault:

@@ -9,7 +9,7 @@ Changes
   The faulty line is 135.
 - Wrong method called. There is the addition of a new method to complement the fixing ( CharacterReader.consumeLetterThenDigitSequence() ).
 - This fault can also deemed a missing code in the method consumeLetterSequence(), line 115, which is fixed by CharacterReader.consumeLetterThenDigitSequence().
-- Approximately 16K of Java code.
+- 13968 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

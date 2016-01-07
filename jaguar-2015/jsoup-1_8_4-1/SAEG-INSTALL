@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault SE_1 in the file StructuralEvaluator, see StructuralEvaluator.cpp. 
   The faulty line is 61.
 - Missing code and wrong value passed to a while statement.
-- Approximately 16K of Java code.
+- 14834 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

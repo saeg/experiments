@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault HTB_1 in the files HtmlTreeBuilder and HtmlBuilderTreeState, see HtmlTreeBuilder.cpp and HtmlBuilderTreeState.cpp. 
   The faulty lines are 162 in HtmlBuilderTree and 130 in HtmlBuilderTreeState.
 - Missing code in HtmlBuilderTree and a method call in a wrong flow in HtmlBuilderTreeState. Both faulty lines generate the same failure.
-- Approximately 16K of Java code.
+- 13191 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

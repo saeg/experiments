@@ -5,10 +5,10 @@ Bug issue: #348
 Description: Fix issue with UTF-8 BOM when charset only in HTML.
 
 Changes
-- This version already contains the fault DU_1 in the file DataUtils, see DataUtils.cpp. 
+- This version already contains the fault DU_1 in the file DataUtil, see DataUtil.cpp. 
   The faulty lines are 125 and 126.
 - Code placed in a wrong flow.
-- Approximately 16K of Java code.
+- 13545 of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

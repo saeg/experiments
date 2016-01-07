@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault CR_2 in the class CharacterReader, see CharacterReader.cpp. 
   The faulty lines are 32,33,34 in CharacterReader.
 - The fault is a wrong assignment to a global variable. 
-- Approximately 16K of Java code.
+- 13182 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

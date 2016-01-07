@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault TBS_2 in the files TreeBuilderState, see TreeBuilderState.cpp. 
   The faulty line is 283.
 - The fault is a missing parameter in a method call (missing code). 
-- Approximately 16K of Java code.
+- 13119 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

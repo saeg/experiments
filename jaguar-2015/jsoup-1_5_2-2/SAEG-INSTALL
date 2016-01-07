@@ -7,7 +7,7 @@ Description: Tweaked Element.outerHtml() method to not generate initial newline 
 Changes
 - This version already contains the fault E_2 in the file Element, see Element.cpp. The faulty line is 960.
 - Missing code in an If statement
-- Approximately 16K of Java code.
+- 8847 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing

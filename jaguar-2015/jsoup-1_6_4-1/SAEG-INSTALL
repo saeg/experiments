@@ -1,4 +1,4 @@
-jsoup 1.6.3 - commit 82f8683129e83b2d7ad9c95efcd4777212d13762
+jsoup 1.6.4 - commit 82f8683129e83b2d7ad9c95efcd4777212d13762
 previous commit 547a11475d71479b7e7bb25b1ebc592bf44b6fe1
 
 Bug issue: #214
@@ -8,7 +8,7 @@ Changes
 - This version already contains the fault SU_1 in the file StringUtils, see StringUtils.cpp. 
   The faulty lines are 113 and 114.
 - Wrong value assigned to a for statement.
-- Approximately 16K of Java code.
+- 12142 lines of Java code.
 - The junit-4.5.jar was removed from the pom.xml and must be replaced by JUnit4
 
 Installing
