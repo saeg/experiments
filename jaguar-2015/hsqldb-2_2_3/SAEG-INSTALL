@@ -1,6 +1,7 @@
 HSQLDB 2.2.3
 
 - Two test classes were excluded (files finished as java.saeg)
+- Two test suites were excluded org.hsqldb.test.AllTests, and org.hsqldb.jdbc.JdbcSuite. These suites run more than 3k test cases repeatedly.
 - Several tests were commented due to failures/errors even when the fault is not inserted. Some test cases are only stubs.
 - This version already contains the fault JDBCCF_AK_1 in the file JDBCClobFile, see JDBCClobFile.cpp.
 
@@ -11,3 +12,5 @@ Installing
 - select the output folder as {project_name}/classes for src and {project_name}/test-classes for test-src
 - include all external jars of lib folders in the build path
 - include JUnit library as JUnit4
+
+- 3934 test cases, 1 failure

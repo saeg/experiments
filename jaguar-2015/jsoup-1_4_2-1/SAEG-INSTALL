@@ -13,7 +13,9 @@ Changes
 Installing
 - import the project as an existing maven project. Use the file pom.xml
 - ignore the maven-helper-maven-plugin error, it doesn't affect the program execution
+- change the project's properties Java Compiler > Compiler compliance level to 1.7
 - include JUnit library as JUnit4
+- configure output folder properties for the source folders: {project_name}/target/classes for src/main/java and as the default output folder; and {project_name}/target/test-classes for src/test/java
 
 - There is a total of 239 test cases, two of which fail
 
