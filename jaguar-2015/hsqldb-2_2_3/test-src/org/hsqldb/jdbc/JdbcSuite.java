@@ -31,6 +31,8 @@
 
 package org.hsqldb.jdbc;
 
+import org.junit.Ignore;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -40,6 +42,7 @@ import junit.framework.TestSuite;
  *
  * @author Campbell Boucher-Burnet (boucherb@users dot sourceforge.net)
  */
+@Ignore
 public class JdbcSuite extends TestCase {
 
     // inherit javadocs
