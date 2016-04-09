@@ -1,0 +1,186 @@
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   Caelum Stella
+[INFO]   Stella Core
+[INFO]   Stella Bean Validation
+[INFO]   Stella Hibernate User-Types
+[INFO]   Stella Faces
+[INFO]   Stella Boleto
+[INFO]   Stella Distribution
+[INFO]   Example: Stella Faces 1x
+[INFO]   Example: Stella Faces 2x
+[INFO]   Example: Validator and Persistence
+[INFO]   Example: Validator and VRaptor
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Caelum Stella
+[INFO]    task-segment: [clean, install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] [enforcer:enforce {execution: enforce-maven}]
+[INFO] [surefire:test {execution: run unit tests}]
+[INFO] No tests to run.
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [javadoc:jar {execution: attach-javadoc}]
+[INFO] Not executing Javadoc as the project is not a Java classpath-capable package
+[INFO] Preparing source:jar
+[WARNING] Removing: jar from forked lifecycle, to prevent recursive invocation.
+[INFO] [enforcer:enforce {execution: enforce-maven}]
+[INFO] [source:jar {execution: attach-sources}]
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\pom.xml to C:\Users\pts_m_000\.m2\repository\br\com\caelum\stella\caelum-stella\2.0.5-SNAPSHOT\caelum-stella-2.0.5-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Stella Core
+[INFO]    task-segment: [clean, install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting directory C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\stella-core\target
+[INFO] [enforcer:enforce {execution: enforce-maven}]
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 81 source files to C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\stella-core\target\classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\stella-core\src\test\resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Compiling 57 source files to C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\stella-core\target\test-classes
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [surefire:test {execution: run unit tests}]
+[INFO] Surefire report directory: C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\stella-core\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.caelum.stella.formatter.TituloEleitoralFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec
+Running br.com.caelum.stella.ResourceBundleMessageProducerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running br.com.caelum.stella.validation.ValidadorDeDVTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running br.com.caelum.stella.validation.LengthValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec
+Running br.com.caelum.stella.validation.ie.IETocantinsValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.745 sec
+Running br.com.caelum.stella.validation.ie.IEMatoGrossoValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec
+Running br.com.caelum.stella.formatter.CPFFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running br.com.caelum.stella.formatter.RenavamFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running br.com.caelum.stella.inwords.IntegerNumericToWordsConverterEN_US_Test
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec
+Running br.com.caelum.stella.validation.ie.IERioGrandeDoNorteValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Running br.com.caelum.stella.SimpleMessageProducerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running br.com.caelum.stella.validation.ie.IEAcreValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running br.com.caelum.stella.validation.ie.IEParaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Running br.com.caelum.stella.inwords.RealNumericToWordsConverterTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Running br.com.caelum.stella.DigitoParaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running br.com.caelum.stella.validation.ie.IECearaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Running br.com.caelum.stella.format.LeftSideZerosFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running br.com.caelum.stella.tinytype.CPFTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running br.com.caelum.stella.validation.ie.IEPernambucoValidatorTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running br.com.caelum.stella.validation.ie.IESaoPauloProdutorRuralValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Running br.com.caelum.stella.validation.ie.IEParanaValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Running br.com.caelum.stella.validation.ie.IEPernambucoNovaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Running br.com.caelum.stella.validation.CNPJValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec
+Running br.com.caelum.stella.inwords.IntegerNumericToWordsConverterPT_BR_Test
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
+Running br.com.caelum.stella.validation.NITValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec
+Running br.com.caelum.stella.validation.ie.IERioDeJaneiroValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+Running br.com.caelum.stella.validation.ie.IEAmazonasValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running br.com.caelum.stella.validation.ie.IEEspiritoSantoValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+Running br.com.caelum.stella.validation.ie.IEMinasGeraisValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Running br.com.caelum.stella.validation.ie.IESaoPauloValidatorTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec
+Running br.com.caelum.stella.validation.ie.IESergipeValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running br.com.caelum.stella.validation.ie.IEPernambucoAntigaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running br.com.caelum.stella.validation.ie.IERioGrandeDoSulValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running br.com.caelum.stella.validation.ie.IERoraimaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running br.com.caelum.stella.validation.ie.IEBahiaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running br.com.caelum.stella.validation.RenavamValidationTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+Running br.com.caelum.stella.tinytype.CNPJTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running br.com.caelum.stella.inwords.NoFormatNumericToWordsConverterTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running br.com.caelum.stella.validation.ie.IEPiauiValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running br.com.caelum.stella.validation.ie.IEMaranhaoValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running br.com.caelum.stella.validation.ie.IEMatoGrossoDoSulValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running br.com.caelum.stella.validation.AcceptAnyValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running br.com.caelum.stella.validation.ie.IEDistritoFederalValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running br.com.caelum.stella.validation.ie.IERondoniaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running br.com.caelum.stella.validation.ie.IEParaibaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running br.com.caelum.stella.validation.ie.IESantaCatarinaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running br.com.caelum.stella.validation.ie.IESaoPauloComercioIndustriaValidatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running br.com.caelum.stella.validation.TituloEleitoralValidatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running br.com.caelum.stella.validation.ie.IEAlagoasValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running br.com.caelum.stella.validation.BaseValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running br.com.caelum.stella.formatter.CNPJFormatterTest
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.026 sec <<< FAILURE!
+Running br.com.caelum.stella.validation.ie.IEGoiasValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running br.com.caelum.stella.validation.ie.IEAmapaValidatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running br.com.caelum.stella.validation.CPFValidatorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running br.com.caelum.stella.formatter.NITFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+
+Results :
+
+Tests in error: 
+  testShoudNotThrowExceptionIfAlreadyUnformated(br.com.caelum.stella.formatter.CNPJFormatterTest)
+
+Tests run: 550, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] There are test failures.
+
+Please refer to C:\apache-maven-2.2.1\stella\stella-11\vers_mista\stella\stella-core\target\surefire-reports for the individual test results.
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 44 seconds
+[INFO] Finished at: Mon Nov 09 15:41:59 BRST 2015
+[INFO] Final Memory: 49M/345M
+[INFO] ------------------------------------------------------------------------
