@@ -1,0 +1,73 @@
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   VRaptor3
+[INFO]   Unnamed - br.com.caelum:vraptor:jar:3.5.2-SNAPSHOT
+[INFO]   Unnamed - br.com.caelum:vraptor-plugin-gae:jar:3.5.2-SNAPSHOT
+[INFO]   Unnamed - br.com.caelum:vraptor-mydvds:war:3.5.2-SNAPSHOT
+[INFO]   Unnamed - br.com.caelum:vraptor-blank-project:pom:3.5.2-SNAPSHOT
+[INFO]   Unnamed - br.com.caelum:vraptor-blank-project-gae:pom:3.5.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Building VRaptor3
+[INFO]    task-segment: [clean, install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] Preparing source:jar
+[WARNING] Removing: jar from forked lifecycle, to prevent recursive invocation.
+[INFO] No goals needed for project - skipping
+[INFO] [source:jar {execution: default}]
+[INFO] [javadoc:jar {execution: attach-javadocs}]
+[INFO] Not executing Javadoc as the project is not a Java classpath-capable package
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing C:\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\pom.xml to C:\Users\pts_m_000\.m2\repository\br\com\caelum\vraptor-parent\3.5.2-SNAPSHOT\vraptor-parent-3.5.2-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - br.com.caelum:vraptor:jar:3.5.2-SNAPSHOT
+[INFO]    task-segment: [clean, install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting directory C:\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\target
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[WARNING] While downloading org.apache.commons:commons-io:1.3.2
+  This artifact has been relocated to commons-io:commons-io:1.3.2.
+  https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 416 source files to C:\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\target\classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Compiling 224 source files to C:\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\target\test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] \apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\src\test\java\br\com\caelum\vraptor\serialization\gson\GsonJSONSerializationTest.java:[64,4] error: constructor DefaultJsonSerializers in class DefaultJsonSerializers cannot be applied to given types;
+
+[ERROR] \apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\src\test\java\br\com\caelum\vraptor\serialization\gson\GsonJSONSerializationTest.java:[459,100] error: constructor DefaultJsonSerializers in class DefaultJsonSerializers cannot be applied to given types;
+
+[ERROR] \apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\src\test\java\br\com\caelum\vraptor\serialization\gson\GsonJSONSerializationTest.java:[470,100] error: constructor DefaultJsonSerializers in class DefaultJsonSerializers cannot be applied to given types;
+
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Compilation failure
+
+\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\src\test\java\br\com\caelum\vraptor\serialization\gson\GsonJSONSerializationTest.java:[64,4] error: constructor DefaultJsonSerializers in class DefaultJsonSerializers cannot be applied to given types;
+
+\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\src\test\java\br\com\caelum\vraptor\serialization\gson\GsonJSONSerializationTest.java:[459,100] error: constructor DefaultJsonSerializers in class DefaultJsonSerializers cannot be applied to given types;
+
+\apache-maven-2.2.1\vraptor\vraptor-4\vers_ruim\vraptor-core\src\test\java\br\com\caelum\vraptor\serialization\gson\GsonJSONSerializationTest.java:[470,100] error: constructor DefaultJsonSerializers in class DefaultJsonSerializers cannot be applied to given types;
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 minute 47 seconds
+[INFO] Finished at: Thu Oct 08 16:51:55 BRT 2015
+[INFO] Final Memory: 58M/383M
+[INFO] ------------------------------------------------------------------------
