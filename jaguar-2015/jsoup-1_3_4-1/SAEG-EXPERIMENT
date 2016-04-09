@@ -1,0 +1,28 @@
+1- Go to source folder
+cd ./experiments/jaguar-2015/jsoup-1_3_4-2
+Copy this folder to your Eclipse Workspace
+
+2- Open eclipse, File-> New Java Project -> Project Name: jsoup-1_3_4-2 -> Finish 
+The project name needs to be exactly the same as the folder name, that you just copied to the workspace.
+
+	- Select the project and right click on it -> Build Path -> Add libraries -> JUnit -> JUnit 4 -> Finish.
+    - Select the project and right click on it -> Build Path -> Configure Build Path -> Source Tab -> Add folder -> src/test/resources -> OK.
+	- Select the project and right click on it -> Properties -> Resource -> Text File Encoding -> Other: UTF-8.
+
+3- Select src/test/java folder and then Rigth click on it -> Run as -> JUnit test.
+These, and only these, tests should fail:
+org.jsoup.nodes.EntitiesTest.unescape
+
+4- Make sure you are using Java 1.7 to compile it.
+Select project folder and Right-click on it -> Properties -> Java Compiler -> Compiler compliance lever = 1.7 -> Apply.
+
+5- Select src/test/java folder and then Rigth click on it -> Run as -> Run Configurations.
+On the left side, double click Jaguar Fault Localization.
+On the first tab (Jaguar), chose control-flow or data-flow.
+On the second tab (Test), make sure you have the option "Run all tests in the selected project, package or source folder" and then src/test/java.
+On the third tab (Main) you should be using jdk1.7.0_75 (we have experienced erros with other versions).
+
+6- Run and whatch.
+
+The error is at:
+org.jsoup.nodes.Entities 66
