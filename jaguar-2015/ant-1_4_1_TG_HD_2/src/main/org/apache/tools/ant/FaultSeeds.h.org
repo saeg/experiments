@@ -1,0 +1,7 @@
+DS_HD_1 1 DirectoryScanner.cpp
+DS_HD_2 2 DirectoryScanner.cpp
+DSC_AK_1 3 DirectoryScanner.cpp
+TG_HD_1 1 Target.cpp
+TRG_AK_2 2 Target.cpp
+TG_HD_2 3 Target.cpp
+FS_HD_1 1 FileSet.cpp

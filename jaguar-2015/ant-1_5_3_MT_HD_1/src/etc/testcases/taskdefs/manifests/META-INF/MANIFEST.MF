@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant @VERSION@ 
+Created-By: 24.75-b04 (Oracle Corporation)
+
+Name: Test2
+TestAttrx: Testx
+
+Name: Test1
+TestAttr2: Test2
+TestAttr1: Test1
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report>
+    <entry coverageType="DUA" faultSuspiciousValue="1.0" fileName="coverage_dataflow_TarantulaHeuristic_flat_1463768047635.xml" heuristic="TARANTULA" maxCost="48" minCost="1" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.7" fileName="coverage_dataflow_Kulczynski2Heuristic_flat_1463768044206.xml" heuristic="KULCZYNSKI2" maxCost="45" minCost="19" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.4" fileName="coverage_dataflow_ZoltarHeuristic_flat_1463768048745.xml" heuristic="ZOLTAR" maxCost="45" minCost="19" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.7" fileName="coverage_dataflow_McConHeuristic_flat_1463768044610.xml" heuristic="MCCON" maxCost="45" minCost="19" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.7" fileName="coverage_controlflow_McConHeuristic_flat_1463767026225.xml" heuristic="MCCON" maxCost="33" minCost="19" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.0" fileName="coverage_dataflow_OpHeuristic_flat_1463768046995.xml" heuristic="OP" maxCost="100" minCost="100" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.0" fileName="coverage_controlflow_OpHeuristic_flat_1463767026997.xml" heuristic="OP" maxCost="100" minCost="100" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.5" fileName="coverage_controlflow_JaccardHeuristic_flat_1463767025638.xml" heuristic="JACCARD" maxCost="21" minCost="19" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.6324555320336759" fileName="coverage_dataflow_OchiaiHeuristic_flat_1463768046322.xml" heuristic="OCHIAI" maxCost="45" minCost="19" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.0" fileName="coverage_dataflow_DRTHeuristic_flat_1463768041388.xml" heuristic="DRT" maxCost="100" minCost="100" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.0" fileName="coverage_controlflow_Wong3Heuristic_flat_1463767027446.xml" heuristic="WONG3" maxCost="100" minCost="100" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="1.0" fileName="coverage_controlflow_TarantulaHeuristic_flat_1463767027234.xml" heuristic="TARANTULA" maxCost="42" minCost="1" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.0" fileName="coverage_dataflow_Wong3Heuristic_flat_1463768047977.xml" heuristic="WONG3" maxCost="100" minCost="100" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.0" fileName="coverage_dataflow_MinusHeuristic_flat_1463768045057.xml" heuristic="MINUS" maxCost="100" minCost="100" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.0" fileName="coverage_controlflow_DRTHeuristic_flat_1463767024743.xml" heuristic="DRT" maxCost="100" minCost="100" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.4" fileName="coverage_controlflow_ZoltarHeuristic_flat_1463767027733.xml" heuristic="ZOLTAR" maxCost="33" minCost="19" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.6708203932499369" fileName="coverage_controlflow_OchiaiHeuristic_flat_1463767026715.xml" heuristic="OCHIAI" maxCost="21" minCost="19" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="DUA" faultSuspiciousValue="0.4" fileName="coverage_dataflow_JaccardHeuristic_flat_1463768043424.xml" heuristic="JACCARD" maxCost="45" minCost="19" readableTime="03 min, 11 sec" totalTimeInMs="191259">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.0" fileName="coverage_controlflow_MinusHeuristic_flat_1463767026445.xml" heuristic="MINUS" maxCost="100" minCost="100" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+    <entry coverageType="LINE" faultSuspiciousValue="0.7" fileName="coverage_controlflow_Kulczynski2Heuristic_flat_1463767025932.xml" heuristic="KULCZYNSKI2" maxCost="33" minCost="19" readableTime="02 min, 27 sec" totalTimeInMs="147144">
+        <maxCostLimit>100</maxCostLimit>
+    </entry>
+</report>

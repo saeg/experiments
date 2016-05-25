@@ -1,0 +1,14 @@
+Ant 1.6
+In the SIR repository this is version v8.
+- Several classes were changed to run in java 7. 
+- Some other classes were excluded (files finished as java.saeg)
+- Several tests were commented to 
+- This version already contains the fault in the file ZipFileSet, see ZipFileSet.cpp.
+
+Installing
+- copy the folder into your workspace
+- create a project with the folder's name
+- select the output folder as {project_name}/build/classes
+- keep only src/main ans src/testcases as source folders. Exclude all other folders from the build path
+- include all external jars of lib and lib/optional folders in the build path
+- include JUnit library as JUnit4
